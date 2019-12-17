@@ -1,11 +1,10 @@
 import React from 'react';
-import Movie from './Movie';
+
 
 const MovieCard = ({movie}) => {
   const { title, director, metascore, stars } = movie;
 
   return (
-    <div className="save-wrapper">
       <div className="movie-card">
         <h2>{title}</h2>
         <div className="movie-director">
@@ -22,8 +21,6 @@ const MovieCard = ({movie}) => {
           </div>
         ))}
       </div>
-      <div className="save-button">Save</div>
-    </div>
   );
 };
 
